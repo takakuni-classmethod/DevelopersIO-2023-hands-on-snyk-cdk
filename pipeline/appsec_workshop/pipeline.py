@@ -51,11 +51,6 @@ class Pipeline(Construct):
                     privileged=True,
                     build_image=codebuild.LinuxBuildImage.AMAZON_LINUX_2_3
                 ),
-                environment_variables={
-                    "CODEGURU_ASSOCIATION": codebuild.BuildEnvironmentVariable(
-                        value=devtools.repo_association.attr_association_arn
-                    )
-                },
                 description="SAST",
                 timeout=cdk.Duration.minutes(60)
             )

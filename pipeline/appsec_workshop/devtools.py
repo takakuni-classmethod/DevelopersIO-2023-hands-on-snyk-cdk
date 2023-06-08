@@ -19,10 +19,6 @@ class DevTools(Construct):
         return self._code_repo
 
     @property
-    def repo_association(self):
-        return self._repo_association
-
-    @property
     def ecr_repo(self):
         return self._ecr_repo
 
