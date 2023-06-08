@@ -39,17 +39,6 @@ class DevTools(Construct):
             repository_name="flask-app",
             description="CodeCommit repo for the workshop")
 
-        ### Associate repo to CodeGuru Reviewer
-        self._repo_association = codegurureviewer.CfnRepositoryAssociation(
-            self, "RepositoryAssociation",
-            name="flask-app",
-            type="CodeCommit",
-        )
-
-        CfnOutput(self, "CodeGuruRepositoryAssociation",
-            value=self._repo_association.attr_association_arn
-        )
-
         ### ECR - docker repo
         self._ecr_repo = ecr.Repository(
             self, "ECR",

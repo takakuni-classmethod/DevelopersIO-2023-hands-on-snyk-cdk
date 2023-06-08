@@ -42,6 +42,3 @@ class Infra(Construct):
         #     self, "ProductionCluster",
         #     vpc=self._production_vpc
         # )
-
-
-        
