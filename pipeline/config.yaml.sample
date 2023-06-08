@@ -12,7 +12,7 @@ sca:
 
 ### License Checker Step
 license:
-  enabled: True
+  enabled: False
 
 ### Dynamic Application Security Testing (DAST) Step
 dast:
