@@ -7,9 +7,7 @@ from aws_cdk import (
     aws_codebuild as codebuild,
     aws_ecs as ecs,
     aws_ecs_patterns as ecs_patterns,
-    aws_iam as iam,
-    aws_codegurureviewer as codegurureviewer,
-    CfnOutput
+    aws_iam as iam
 )
 
 class DevTools(Construct):
